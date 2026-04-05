@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Мой проект: Планеты Солнечной системы</title>
+    <style>
+        body { font-family: Arial; text-align: center; padding: 20px; }
+        button { padding: 10px 20px; margin: 10px; cursor: pointer; background: #4CAF50; color: white; border: none; border-radius: 8px; }
+        #info { margin-top: 20px; padding: 15px; background: #f0f0f0; border-radius: 10px; }
+        .planet-btn { background: #2196F3; }
+    </style>
+</head>
+<body>
+    <h1>🏫 Школьный проект: Планеты</h1>
+    <p>Нажми на любую планету — появится интересный факт:</p>
+
+    <button class="planet-btn" onclick="showFact('Марс')">🔴 Марс</button>
+    <button class="planet-btn" onclick="showFact('Юпитер')">🟠 Юпитер</button>
+    <button class="planet-btn" onclick="showFact('Сатурн')">🪐 Сатурн</button>
+
+    <div id="info">
+        ✨ Нажми на кнопку, чтобы узнать факт
+    </div>
+
+    <script>
+        function showFact(planet) {
+            let fact = "";
+            if (planet === "Марс") fact = "🔴 На Марсе находится самая высокая гора в Солнечной системе — Олимп (21 км).";
+            else if (planet === "Юпитер") fact = "🟠 Юпитер — самая большая планета, внутри неё поместились бы все остальные планеты.";
+            else if (planet === "Сатурн") fact = "🪐 Кольца Сатурна состоят изо льда и камней, но они очень тонкие — всего около 1 км толщиной.";
+            document.getElementById("info").innerHTML = "📌 <strong>" + planet + "</strong><br>" + fact;
+        }
+    </script>
+</body>
+</html>
