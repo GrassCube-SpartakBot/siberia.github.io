@@ -10,7 +10,7 @@
             background-size: cover;
             background-position: center;
             height: 600px;
-            display: centet;
+            display: center;
             align-items: center;
             justify-content: center;
         }
@@ -32,6 +32,20 @@
             display: center;
             justify-content: space-between
         }
+        .buttons-container
+        {
+            margin: 0;           /* Убираем внешние отступы */
+            padding: 0;          /* Убираем внутренние отступы */
+            background: none;    /* Убираем фон */
+            display: flex;       /* Включаем flex для контейнера */
+            width: 100%;         /* Растягиваем на всю ширину */
+        }
+        .main-btn
+        {
+            flex: 1;             /* Каждая кнопка занимает РАВНУЮ долю ширины */
+            margin: 0;           /* Убираем отступы между кнопками */
+            border-radius: 0;    /* Убираем скругление углов (если не нужно) */
+        }
     </style>
 </head>
 <body>
@@ -40,12 +54,14 @@
         <h1>Сибирь и её экологические проблемы</h1>
     </div>
 
-    <dev class='hero'>
+    <!-- <div class='hero'>
         <h2>
             <button class="planet-btn" onclick="showFact('info')">Общая информация о Сибири</button>
             <button class="planet-btn" onclick="showFact('problems')">Экологические проблемы</button>
             <button class="planet-btn" onclick="showFact('metods')">Методы решения экологических проблем</button>            
-        </h2>
+        </h2> -->
+
+    <div class="buttons-container"><button>Кнопка 1</button><button>Кнопка 2</button><button>Кнопка 3</button></div>
 
 
 
