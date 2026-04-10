@@ -28,12 +28,12 @@
         {
             position: relative;
             z-index: 2;      /* Чтобы заголовок был ПОВЕРХ затемнения */
-            color: rgba(255,255,255,0.9);    /* Белый цвет текста */
+            color: rgba(255,255,255,1);    /* Белый цвет текста */
             font-size: 72px;
             text-align: center;
             font-family: Bebas Neue Cyrillic;
             font-weight: normal;
-            text-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+            text-shadow: 0px 0px 10px rgba(0,0,0,0.9);
             margin: 0;
             padding: 20px;
         }
@@ -60,13 +60,17 @@
             background: rgb(255,255,255);
             color: rgb(0,0,0);
             height: 40px;
-            padding: 0,0,5,0px;
+            padding: 0,0,7,0px;
             transition: all 0.5s ease;
         }
         .main-btn:hover
         {
             background-color: #64ae4d;
             color: #ffffff;
+        }
+        .content
+        {
+            padding: 0,20,0,20px;
         }
     </style>
 </head>
