@@ -61,7 +61,7 @@
         {
             background-color: #64ae4d;
             color: #ffffff;
-            box-shadow: 0px 10px 7px rgba(0,0,0,0.4);
+            box-shadow: 0 10px 7px rgba(0,0,0,0.4);
         }
         .content p
         {
@@ -80,11 +80,15 @@
         }
         .content-image
         {
-            background-image: url('1.jpg');
-            width: 100%;           /* На всю ширину контейнера */
-            height: auto;          /* Сохраняем пропорции */
+            height: 300px;          /* Сохраняем пропорции */
             border-radius: 16px;   /* Красивые скруглённые углы */
             margin: 20px 0;        /* Отступы сверху и снизу */
+        }
+        .content-image:hover
+        {
+            height: 350px;          /* Сохраняем пропорции */
+            border-radius: 0;   /* Красивые скруглённые углы */
+            box-shadow: 0 0 7px rgba(0,0,0,0.4);
         }
     </style>
 </head>
