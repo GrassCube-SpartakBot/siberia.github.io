@@ -80,25 +80,38 @@
         }
         .gallery
         {
-            display: flex;           /* Включаем flex для горизонтального ряда */
-            gap: 20px;               /* Расстояние между изображениями */
-            overflow-x: auto;        /* Если не влезают — появляется скролл */
-            padding: 0 20px 0 20px;
-            
+            display: flex;
+            gap: 20px;
+            overflow-x: auto;
+            padding: 20px;
         }
+        
         .image-card
         {
-            position: relative;       /* ✅ нужно для позиционирования подписи */
-            background: transparent;  /* ✅ прозрачный фон */
+            position: relative;
+            background: transparent;
             border-radius: 16px;
+            overflow: hidden;
+            flex-shrink: 0;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
+        
+        .image-card:hover
+        {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(0,0,0,0.85);
+            z-index: 10;
+        }
+        
         .content-image
         {
             height: 300px;
+            width: auto;
             border-radius: 16px;
-            margin: 20px 0;
-            transition: all 0.5s ease;
+            margin: 0;
+            display: block;
         }
+        
         .image-caption
         {
             position: absolute;
@@ -111,14 +124,11 @@
             font-size: 14px;
             text-align: center;
             padding: 40px 10px 12px 10px;
-            opacity: 0;               /* ✅ скрываем подпись */
-            transition: opacity 0.3s ease; /* ✅ плавное появление */
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            pointer-events: none;
         }
-        .image-card:hover .content-image
-        {
-            transform: scale(1.05);
-            box-shadow: 0 0 15px rgba(0,0,0,0.85);
-        }
+        
         .image-card:hover .image-caption
         {
             opacity: 1;
