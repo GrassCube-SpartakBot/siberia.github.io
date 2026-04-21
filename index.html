@@ -44,6 +44,8 @@
             display: flex;       /* Включаем flex для контейнера */
             width: 100%;         /* Растягиваем на всю ширину */
             position: sticky;
+            top: 0;
+            z-index: 999;
         }
         .main-btn
         {
@@ -167,17 +169,17 @@
 
     <div class="gallery">
         <div class="image-card">
-            <img src="1.jpg" alt="Природа Сибири" class="content-image">
+            <img src="1.jpg" alt="1" class="content-image">
             <div class="image-caption">Саяно-Шушенская ГЭС</div>
         </div>
         
         <div class="image-card">
-            <img src="2.jpg" alt="Экологическая проблема" class="content-image">
+            <img src="2.jpg" alt="2" class="content-image">
             <div class="image-caption">текст</div>
         </div>
         
         <div class="image-card">
-            <img src="3.jpg" alt="Заповедник Сибири" class="content-image">
+            <img src="3.jpg" alt="3" class="content-image">
             <div class="image-caption">текст</div>
         </div>
     </div>
