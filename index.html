@@ -88,14 +88,10 @@
         }
         .image-card
         {
-            font-family: Bebas Neue Cyrillic;
-            font-weight: normal;
-            padding: 0 0 10px 0;
-            font-size: 16px;
-            color: rgba(255,255,255,0.9);
-            text-align: bottom;
-            background: white;
-            position: relative;
+            position: relative;       /* ✅ нужно для позиционирования подписи */
+            background: transparent;  /* ✅ прозрачный фон */
+            border-radius: 16px;
+            overflow: hidden;         /* ✅ чтобы увеличенная картинка не вылезала */
         }
         .content-image
         {
@@ -104,9 +100,10 @@
             margin: 20px 0;
             transition: all 0.5s ease;
         }
-        .image-caption {
-            position: absolute;           /* Абсолютное позиционирование */
-            bottom: 0;                    /* Прижимаем к нижнему краю карточки */
+        .image-caption
+        {
+            position: absolute;
+            bottom: 0;
             left: 0;
             right: 0;
             background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0));
@@ -115,16 +112,17 @@
             font-size: 14px;
             text-align: center;
             padding: 40px 10px 12px 10px;
+            opacity: 0;               /* ✅ скрываем подпись */
+            transition: opacity 0.3s ease; /* ✅ плавное появление */
         }
-        .content-image:hover
+        .image-card:hover .content-image
         {
             transform: scale(1.05);
-            border-radius: 0;
             box-shadow: 0 0 15px rgba(0,0,0,0.85);
         }
         .image-card:hover .image-caption
         {
-            background: linear-gradient(to top, rgba(100,174,77,0.85), rgba(100,174,77,0));
+            opacity: 1;
         }
     </style>
 </head>
@@ -164,12 +162,12 @@
         </div>
         
         <div class="image-card">
-            <img src="2.jpg" alt="Экологическая проблема" class="content-image">
+            <img src="1.jpg" alt="Экологическая проблема" class="content-image">
             <div class="image-caption">Загрязнение рек промышленными отходами</div>
         </div>
         
         <div class="image-card">
-            <img src="3.jpg" alt="Заповедник Сибири" class="content-image">
+            <img src="1.jpg" alt="Заповедник Сибири" class="content-image">
             <div class="image-caption">Заповедники — надежда для сохранения природы</div>
         </div>
     </div>
