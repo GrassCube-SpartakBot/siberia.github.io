@@ -192,6 +192,20 @@
             color: rgba(255,255,255,0.9);
             line-height: 1.4;
         }
+
+        /* Нечётные карточки (1, 3, 5...) — текст по левому краю */
+        .static-card:nth-child(odd) .static-content
+        {
+            align-items: flex-start;    /* Текст слева */
+            text-align: left;
+        }
+        
+        /* Чётные карточки (2, 4, 6...) — текст по правому краю */
+        .static-card:nth-child(even) .static-content
+        {
+            align-items: flex-end;      /* Текст справа */
+            text-align: right;
+        }
     </style>
 </head>
 <body>
@@ -254,6 +268,7 @@
             <p>    Важно отметить, что режим «чёрного неба» характеризуется не только высокой концентрацией частиц PM2.5, но также и оксида углерода, диоксида серы, оксидов азота, летучих органических соединений тяжёлых металлов. Многие из этих веществ являются сильными канцерогенами, способны вызывать раздражение слизистых оболочек, заболевания лёгких. Тяжёлые металлы в больших дозах могут вызывать отравление, поражать нервную систему.</p>
         </div>
     </div>
+    
     <div class="static-card">
         <img src="static2.jpg" alt="Описание" class="static-image">
         <div class="static-content">
@@ -262,7 +277,8 @@
             <p></p>
         </div>
     </div>
-        <div class="static-card">
+    
+    <div class="static-card">
         <img src="static3.jpg" alt="Описание" class="static-image">
         <div class="static-content">
             <h3>Загрязнение водоёмов</h3>
@@ -270,7 +286,8 @@
             <p></p>
         </div>
     </div>
-        <div class="static-card">
+    
+    <div class="static-card">
         <img src="static4.jpg" alt="Описание" class="static-image">
         <div class="static-content">
             <h3>Сокращение видового многообразия</h3>
@@ -278,5 +295,6 @@
             <p></p>
         </div>
     </div>
+    
 </body>
 </html>
