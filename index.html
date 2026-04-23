@@ -138,7 +138,8 @@
             opacity: 1;
         }
 
-        .static-card {
+        .static-card
+        {
             position: relative;
             background: white;
             border-radius: 20px;
@@ -147,10 +148,26 @@
         }
         
         /* Изображение в статичной карточке */
-        .static-image {
+        .static-image
+        {
             width: 100%;
             height: auto;
             display: block;
+            z-index: 1;
+        }
+
+        .static-content
+        {
+            position: relative;
+            z-index: 2;      /* Чтобы заголовок был ПОВЕРХ затемнения */
+            color: rgba(255,255,255,1);    /* Белый цвет текста */
+            font-size: 72px;
+            text-align: center;
+            font-family: Bebas Neue Cyrillic;
+            font-weight: normal;
+            text-shadow: 0px 0px 10px rgba(0,0,0,0.8);
+            margin: 0;
+            padding: 20px;
         }
     </style>
 </head>
@@ -208,6 +225,7 @@
 
     <div class="static-card">
         <img srс="static1.jpg" class="static-image">
+        <div class="static-content">Чёрное небо</div>
     </div>
 
 </body>
