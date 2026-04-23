@@ -144,7 +144,7 @@
             background: white;
             overflow: hidden;
             box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            padding: 30px;
+            margin: 30px;
         }
         
         /* Изображение в статичной карточке */
@@ -213,9 +213,9 @@
     </div>
 
     <div class='buttons-container'>
-        <button class='main-btn'>Общие сведения о Сибири</button>
-        <button class='main-btn'>Основные экологические проблемы</button>
-        <button class='main-btn'>Способы защиты природы Сибири</button>
+        <button class='main-btn' onclick="document.getElementById('section-1').scrollIntoView({ behavior: 'smooth' })">Общие сведения о Сибири</button>
+        <button class='main-btn' onclick="document.getElementById('section-2').scrollIntoView({ behavior: 'smooth' })">Основные экологические проблемы</button>
+        <button class='main-btn' onclick="document.getElementById('section-3').scrollIntoView({ behavior: 'smooth' })">Способы защиты природы Сибири</button>
     </div>
 
     <div id="section-1" class="content">
