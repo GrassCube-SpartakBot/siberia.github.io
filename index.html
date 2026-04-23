@@ -193,13 +193,13 @@
             line-height: 1.4;
         }
 
-        .static-card:nth-child(even) .static-content /*выбор выравнивания текста по чётности/нечётности */
+        .static-content--left
         {
             align-items: flex-start;
             text-align: left;
         }
         
-        .static-card:nth-child(odd) .static-content
+        .static-content--right
         {
             align-items: flex-end;
             text-align: right;
@@ -260,7 +260,7 @@
 
     <div class="static-card">
         <img src="static1.jpg" alt="Описание" class="static-image">
-        <div class="static-content">
+        <div class="static-content static-content--left">
             <h3>Чёрное небо</h3>
             <p>    «Чёрное небо» – режим неблагоприятных метеоусловий (НМУ), вводимый во многих городах Сибири, играющих важную роль в промышленном производстве. В числе крупнейших сибирских городов, в которых часто вводится этот режим: Красноярск, Новокузнецк, Новосибирск, Омск, Улан-Удэ. Режим вводится, когда выбросы от предприятий города не могут в полной мере рассеиваться в атмосфере, поэтому накапливаются в приземном слое атмосферного воздуха. Из-за этого в городе возникает густой ядовитый смог.</p>
             <p>    Важно отметить, что режим «чёрного неба» характеризуется не только высокой концентрацией частиц PM2.5, но также и оксида углерода, диоксида серы, оксидов азота, летучих органических соединений тяжёлых металлов. Многие из этих веществ являются сильными канцерогенами, способны вызывать раздражение слизистых оболочек, заболевания лёгких. Тяжёлые металлы в больших дозах могут вызывать отравление, поражать нервную систему.</p>
@@ -269,7 +269,7 @@
     
     <div class="static-card">
         <img src="static2.jpg" alt="Описание" class="static-image">
-        <div class="static-content">
+        <div class="static-content static-content--right">
             <h3>Таяние многолетней мерзлоты</h3>
             <p></p>
             <p></p>
@@ -278,7 +278,7 @@
     
     <div class="static-card">
         <img src="static3.jpg" alt="Описание" class="static-image">
-        <div class="static-content">
+        <div class="static-content static-content--left">
             <h3>Загрязнение водоёмов</h3>
             <p></p>
             <p></p>
@@ -287,7 +287,7 @@
     
     <div class="static-card">
         <img src="static4.jpg" alt="Описание" class="static-image">
-        <div class="static-content">
+        <div class="static-content static-content--right">
             <h3>Сокращение видового многообразия</h3>
             <p></p>
             <p></p>
