@@ -53,6 +53,7 @@
             margin: 0;           /* Убираем отступы между кнопками */
             border: none;    /* Убираем скругление углов (если не нужно) */
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            font-weight: 400;
             font-size: 20px;
             background: rgb(255,255,255);
             color: rgb(0,0,0);
@@ -136,6 +137,21 @@
         {
             opacity: 1;
         }
+
+        .static-card {
+            position: relative;
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        /* Изображение в статичной карточке */
+        .static-image {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
     </style>
 </head>
 <body>
@@ -175,20 +191,21 @@
         
         <div class="image-card">
             <img src="2.jpg" alt="2" class="content-image">
-            <div class="image-caption">текст</div>
+            <div class="image-caption">Сургутская ГРЭС-2</div>
         </div>
         
         <div class="image-card">
             <img src="3.jpg" alt="3" class="content-image">
-            <div class="image-caption">текст</div>
+            <div class="image-caption">Омский нефтеперерабатывающий завод</div>
         </div>
     </div>
     
     <div class="content">
         <h2>Главные экологические проблемы Сибири</h2>
         <p>Являясь средоточием чёрной и цветной металлургии, добывающей и химической промышленности, Сибирь неизбежно обзавелась огромным количеством экологических проблем. Экономика, разнообразие живых существ, качество жизни, смертность и рождаемость, естественные природные ландшафты – вот лишь малая часть того, что будет зависеть от разрешения или усугубления экологических проблем.</p>
+        <p>Хотя сейчас многие люди начали осознавать значение защиты природы, проблемы никуда не делись, и, более того, многие из них обладают накопительным эффектом. Вредя напрмую или косвенно, мы зачатую не задумываемся о последствии своих действий.</p>
     </div>
-
+    
 
 </body>
 </html>
