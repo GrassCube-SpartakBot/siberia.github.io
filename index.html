@@ -150,20 +150,21 @@
         /* Изображение в статичной карточке */
         .static-image
         {
-            position: relative;
             width: 100%;
             height: 300px;
             display: block;
-            z-index: 1;
         }
 
         .static-content
         {
             position: relative;
-            z-index: 2;
+            position: absolute;           /* КЛЮЧЕВОЕ */
+            bottom: 0;                    /* Прижимаем к низу */
+            left: 0;
+            right: 0;
             color: rgba(255,255,255,1);
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-            font-size: 30px;
+            font-size: 20px;
             font-weight: normal;
             text-align: left;
             margin: 0;
