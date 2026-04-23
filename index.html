@@ -193,17 +193,15 @@
             line-height: 1.4;
         }
 
-        /* Нечётные карточки (1, 3, 5...) — текст по левому краю */
-        .static-card:nth-child(odd) .static-content
+        .static-card:nth-child(even) .static-content /*выбор выравнивания текста по чётности/нечётности */
         {
-            align-items: flex-start;    /* Текст слева */
+            align-items: flex-start;
             text-align: left;
         }
         
-        /* Чётные карточки (2, 4, 6...) — текст по правому краю */
-        .static-card:nth-child(even) .static-content
+        .static-card:nth-child(odd) .static-content
         {
-            align-items: flex-end;      /* Текст справа */
+            align-items: flex-end;
             text-align: right;
         }
     </style>
