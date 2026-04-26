@@ -199,10 +199,12 @@
         }
         .grid-cell
         {
-            border: 20px solid white;                 /* Рамка каждой ячейки */
+            border: 20px solid #333;                 /* Рамка каждой ячейки */
             padding: 20px;
             background: transparent;                /* Прозрачный фон */
             background: #64ae4d;
+            margin: 30px;
+            transition: transform 0.3s ease;
         }
         .grid-cell h3
         {
@@ -219,6 +221,8 @@
         } 
         .grid-cell:hover
         {
+            transform: scale(1.1);
+            z-index: 10;
         }
     </style>
 </head>
