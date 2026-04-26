@@ -89,7 +89,6 @@
             overflow-x: auto;
             padding: 20px;
         }
-        
         .image-card
         {
             position: relative;
@@ -99,14 +98,12 @@
             flex-shrink: 0;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-        
         .image-card:hover
         {
             transform: scale(1.05);
             box-shadow: 0 0 15px rgba(0,0,0,0.85);
             z-index: 10;
-        }
-        
+        } 
         .content-image
         {
             height: 300px;
@@ -114,8 +111,7 @@
             border-radius: 16px;
             margin: 0;
             display: block;
-        }
-        
+        } 
         .image-caption
         {
             position: absolute;
@@ -131,21 +127,18 @@
             opacity: 0;
             transition: opacity 0.3s ease;
             pointer-events: none;
-        }
-        
+        }   
         .image-card:hover .image-caption
         {
             opacity: 1;
         }
-
         .static-card
         {
             position: relative;
             background: white;
             overflow: hidden;
             box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        }
-        
+        }    
         /* Изображение в статичной карточке */
         .static-image
         {
@@ -153,7 +146,6 @@
             height: auto;
             display: block;
         }
-
         .static-content
         {
             position: absolute;
@@ -174,7 +166,6 @@
             padding: 20px;
             margin: 0;
         }
-
         .static-content h3
         {
             font-size: 32px;
@@ -182,7 +173,6 @@
             margin: 0 0 8px 0;
             color: white;
         }
-        
         .static-content p
         {
             font-size: 20px;
@@ -191,17 +181,46 @@
             color: rgba(255,255,255,0.9);
             line-height: 1.4;
         }
-
         .static-content--left
         {
             align-items: flex-start;
             text-align: left;
         }
-        
         .static-content--right
         {
             align-items: flex-end;
             text-align: right;
+        }
+        .info-grid
+        {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);  /* 3 равные колонки */
+            margin: 30px;
+            border: 1px solid #ddd;                 /* Внешняя рамка всей таблицы */
+        }
+        .grid-cell
+        {
+            border: 1px solid #ddd;                 /* Рамка каждой ячейки */
+            padding: 20px;
+            background: transparent;                /* Прозрачный фон */
+        }
+        .grid-cell h3
+        {
+            font-size: 18px;
+            margin: 0 0 10px 0;
+            color: #1a5276;
+        }
+        .grid-cell p
+        {
+            font-size: 14px;
+            margin: 0;
+            color: #555;
+            line-height: 1.4;
+        } 
+        /* Лёгкий эффект при наведении (опционально) */
+        .grid-cell:hover
+        {
+            background: rgba(100, 174, 77, 0.05);
         }
     </style>
 </head>
